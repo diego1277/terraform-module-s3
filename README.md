@@ -14,14 +14,14 @@ Binary version ```v1.3.2```
 Set default configuration
 ```
 module "s3" {
-   source = "https://github.com/diego1277/terraform-module-s3.git"
+   source = "github.com/diego1277/terraform-module-s3"
    bucket_name = "s3-dso-terraform"
 }
 ```
 Enable CORS
 ```
 module "s3" {
-   source = "https://github.com/diego1277/terraform-module-s3.git"
+   source = "github.com/diego1277/terraform-module-s3"
    bucket_name = "s3-dso-terraform"
    cors_rules = {
      rule1 = {
@@ -35,7 +35,7 @@ module "s3" {
 Enable bucket lifecycle
 ```
 module "s3" {
-   source = "https://github.com/diego1277/terraform-module-s3.git"
+   source = "github.com/diego1277/terraform-module-s3"
    bucket_name = "s3-dso-terraform"
    bucket_object = {
      tmp = {
@@ -56,7 +56,7 @@ module "s3" {
 Enable bucket lifecycle with transition
 ```
 module "s3" {
-   source = "https://github.com/diego1277/terraform-module-s3.git"
+   source = "github.com/diego1277/terraform-module-s3"
    bucket_name = "s3-dso-terraform"
    bucket_object = {
      tmp = {
